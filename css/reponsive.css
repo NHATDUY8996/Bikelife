@@ -1,0 +1,94 @@
+/* reponsive */
+@media (max-width: 767px) {
+
+  /* header */
+  .mycontainer {
+    padding: 0 12px;
+  }
+
+  .logo img {
+    max-width: 50px;
+  }
+
+  .dnm {
+    display: none !important;
+  }
+
+  /* header */
+}
+
+@media (max-width: 1023px) {
+
+  .search input {
+    display: none;
+  }
+
+  .iconuser {
+    width: 20px;
+    height: 20px;
+  }
+
+  .iconuser i {
+    font-size: 12px;
+  }
+
+  .cart {
+    padding: 6px !important;
+  }
+
+  .cart span {
+    display: none;
+  }
+
+  .search .iconSearch {
+    background-color: var(--color-white);
+    border: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  /* header */
+  .mycontainer {
+    padding: 0 30px;
+  }
+
+  .logo img {
+    max-width: 70px;
+  }
+
+  .phone,
+  .menu span {
+    font-size: 12px;
+  }
+
+  .search .iconSearch {
+    background-color: var(--color-white);
+    border: none !important;
+  }
+
+  /* header */
+
+}
+
+@media (min-width: 1024px) {
+
+  /* header */
+  .mycontainer {
+    padding: 0 220px;
+  }
+
+  .logo {
+    min-height: 50px;
+  }
+
+  .logo img {
+    max-width: 90px;
+  }
+
+  .iconSearch {
+    padding: 5px;
+  }
+
+  /* header */
+}

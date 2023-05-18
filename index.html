@@ -1,0 +1,1102 @@
+<?php 
+	$dm='http://localhost/nhatduy__buoi4/';
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="<?php echo $dm; ?>" />
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- link carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!-- LINK GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <link rel="stylesheet" href="./public/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./public/owlcarousel/owl.theme.default.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css?version=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <link rel="stylesheet" href="./css/mystyle.css">
+
+    <!-- js carousel -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="./public/js/jquery.js"></script>
+    <!-- <script src="./public/js/script.js"></script> -->
+    <script type="text/javascript" src="public/js/popper.min.js" defer></script>
+    <script type="text/javascript" src="public/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./public/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Bike</title>
+
+</head>
+
+<body>
+    <div class="indexs">
+
+        <!-- header -->
+        <div class="header row bshadow">
+            <div class="mycontainer my-3 dbetween">
+
+                <!-- logo -->
+                <div class="logo">
+                    <img class="cursor" src="./img/logo.png" alt="">
+                </div>
+                <!-- logo -->
+
+                <!-- nav -->
+                <div class="nav dcenter cursor pRl">
+                    <input type="checkbox" id="nav__pc" class="nav__input dn">
+                    <label class="overlaynav dn cursor wh100 bgba pF" for="nav__pc"></label>
+                    <label class="nav__pc cursor" for="nav__pc">MENU</label>
+
+                    <div class="nav__info pF bgw bd h100 l0 t0 py-3 px-5">
+                        <div class="nav__title d-flex align-items-center mt-2 ms-2 ps-3">
+                            <label class="leftToRight arrowl me-3 cursor" for="nav__pc">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </label>
+                            <h2 class="my-3 mx-2">Danh mục</h2>
+                        </div>
+
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <img class="wh28 me-2" src="./img/menucap1/thuong-hieu_2.png" alt="">
+                                <span>Thương hiệu</span>
+                            </li>
+                            <li class="nav__item">
+                                <img class="wh28 me-2" src="./img/menucap1/mon-the-thao_2.png" alt="">
+                                <span>Môn thể thao</span>
+                            </li>
+                            <li class="nav__item">
+                                <img class="wh28 me-2" src="./img/menucap1/khuyen-mai_2.png" alt="">
+                                <span>Khuyến mãi</span>
+                            </li>
+                            <li class="nav__item">
+                                <img class="wh28 me-2" src="./img/menucap1/tai-tro_2.png" alt="">
+                                <span>Tài trợ</span>
+                            </li>
+                            <li class="nav__item">
+                                <img class="wh28 me-2" src="./img/menucap1/thu-vien_2.png" alt="">
+                                <span>Thư viện</span>
+                            </li>
+                            <li class="nav__item">
+                                <img class="wh28 me-2" src="./img/menucap1/tin-tuc_2.png" alt="">
+                                <span>Tin tức</span>
+                            </li>
+                            <li class="nav__item">
+                                <img class="wh28 me-2" src="./img/menucap1/cac-huong-dan_1.png" alt="">
+                                <span>Các hướng dẫn</span>
+                            </li>
+                            <li class="nav__item">
+                                <img class="wh28 me-2" src="./img/menucap1/gioi-thieu_2.png" alt="">
+                                <span>Giới thiệu</span>
+                            </li>
+                            <li class="nav__item">
+                                <img class="wh28 me-2" src="./img/menucap1/lien-he_2.png" alt="">
+                                <span>Liên hệ</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- nav -->
+
+                <!-- menu -->
+                <div class="menu dcenter cursor pRl">
+                    <input type="checkbox" id="menu__mobile" class="menu__input dn">
+                    <label class="navMN navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar" for="menu__mobile" onclick="changeMenuIcon(this)"
+                        aria-expanded="true">
+                        <div class="icon__menu1"></div>
+                        <div class="icon__menu2"></div>
+                        <div class="icon__menu3"></div>
+                    </label>
+                    <span class="cblack bold dnm">DANH MUC SAN PHAM</span>
+
+                    <ul class="menu__list hiden pAs bgw bshadow">
+                        <li class="menu__item">
+                            <img src="./img/menu/tat-ca-san-pham_2.png" alt="" class="wh28 me-3">Tất cả sản phẩm
+                        </li>
+                        <li class="menu__item">
+                            <img src="./img/menu/16012020_1101257.png" alt="" class="wh28 me-3">Dịch vụ
+                        </li>
+                        <li class="menu__item dbetween">
+                            <img src="./img/menu/16592020_1059181.png" alt="" class="wh28 me-3">
+                            <div class="dbetween w100">
+                                Xe Đạp & Sườn Xe<i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="dropMenu hiden pAs bgw bshadow h100">
+                                <ul class="row">
+                                    <li class="col-lg-4 col-md-6 bdr">
+                                        <img src="./img/menu/dropmenu/21232020_022312Khung suon.jpg" alt=""
+                                            class="wh28 me-2">
+                                        <span>Khung sườn</span>
+                                    </li>
+                                    <li class="col-lg-4 col-md-6 bdr">
+                                        <img src="./img/menu/dropmenu/21292020_022914Xe road 1.jpg" alt=""
+                                            class="wh28 me-2">
+                                        <span>Xe đạp Road</span>
+                                    </li>
+                                    <li class="col-lg-4 col-md-6 bdr">
+                                        <img src="./img/menu/dropmenu/21102020_021015Xe Tri.jpg" alt=""
+                                            class="wh28 me-2">
+                                        <span>Xe đạp Ba Môn Phối Hợp - Triathlon Bike</span>
+                                    </li>
+                                    <li class="col-lg-4 col-md-6 bdr">
+                                        <img src="./img/menu/dropmenu/21102020_021015Xe Tri.jpg" alt=""
+                                            class="wh28 me-2">
+                                        <span>Xe đạp Ba Môn Phối Hợp - Triathlon Bike</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item dcenter1">
+                            <img src="./img/menu/17352020_023515banh xe.png" alt="" class="wh28 me-3">
+                            <div class="dbetween w100">
+                                Bánh xe<i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="dropMenu hiden pAs bgw bshadow h100">
+                                <ul class="row">
+                                    <li class="col-lg-4 col-md-6 bdr">
+                                        <img src="./img/menu/dropmenu/21232020_022312Khung suon.jpg" alt=""
+                                            class="wh28 me-2">
+                                        <span>Khung sườn</span>
+                                    </li>
+                                    <li class="col-lg-4 col-md-6 bdr">
+                                        <img src="./img/menu/dropmenu/21232020_022312Khung suon.jpg" alt=""
+                                            class="wh28 me-2">
+                                        <span>Khung sườn</span>
+                                    </li>
+                                    <li class="col-lg-4 col-md-6 bdr">
+                                        <img src="./img/menu/dropmenu/21232020_022312Khung suon.jpg" alt=""
+                                            class="wh28 me-2">
+                                        <span>Khung sườn</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="menu__item dcenter1">
+                            <img src="./img/menu/20002020_120052Groupset.jpg" alt="" class="wh28 me-3">
+                            <div class="dbetween w100">
+                                Linh kiện<i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li class="menu__item dcenter1">
+                            <img src="./img/menu/20432020_124359Phu kien.jpg" alt="" class="wh28 me-3">
+                            <div class="dbetween w100">
+                                Phụ kiện<i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li class="menu__item dcenter1">
+                            <img src="./img/menu/20352020_123510Trang phuc va giay 1.png" alt="" class="wh28 me-3">
+                            <div class="dbetween w100">
+                                Trang phục & Giày<i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li class="menu__item dcenter1">
+                            <img src="./img/menu/16002020_1100585.png" alt="" class="wh28 me-3">
+                            <div class="dbetween w100">
+                                Dầu nhớt<i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                        <li class="menu__item dcenter1">
+                            <img src="./img/menu/18192020_121934Gel.png" alt="" class="wh28 me-3">
+                            <div class="dbetween w100">
+                                Thực phẩm chức năng<i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- menu -->
+
+                <!-- search -->
+                <div class="searchT">
+                    <input type="checkbox" id="nav__search" class="nav__input dn">
+                    <label class="overlaysearch dn cursor wh100 bgba pF" for="nav__search"></label>
+                    <form action="" class="search dcenter">
+                        <input class="py-2 px-3 binput bd" type="search" placeholder="Tìm kiếm sản phẩm">
+                        <label class="iconSearch binput px-3 bd" for="nav__search">
+                            <i class="fa-solid fa-magnifying-glass cursor"></i>
+                        </label>
+                    </form>
+                    <div class="searchmobile bgw pAs dcenter hiden">
+                        <label for="nav__search" class="cursor"><i class="fa-solid fa-chevron-left"></i></label>
+                        <form action="" class="searchmb input-group binput bgb w60 ms-4 row dcenter">
+                            <input class="py-2 px-3 binput bn col-10" type="search" placeholder="Tìm kiếm sản phẩm">
+                            <div class="iconSearch px-3 col-2 dcenter">
+                                <i class="fa-solid fa-magnifying-glass cursor"></i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- search -->
+
+                <!-- phone -->
+                <div class="phone br50 cwhite px-2 py-1 bgg2 dcenter cursor">
+                    <i class="fa-solid fa-phone-flip me-2"></i>
+                    <span class="dnm">0938 108 401 (Ms Mỹ)</span>
+                </div>
+                <!-- phone -->
+                <!-- member -->
+                <div class="member dcenter cursor pRl">
+                    <div class=" iconuser dcenter br50 wh282 me-2">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <span class="dnm">Thành viên</span>
+
+                    <div class="memberhover brg py-3 px-4 pAs bgw hiden w200px">
+                        <a href="">
+                            <i class="fa-solid fa-user me-2 py-3"></i>Đăng nhập
+                        </a><br>
+                        <a href="">
+                            <i class="fa-solid fa-user me-2 py-3"></i>Đăng ký
+                        </a>
+                    </div>
+                </div>
+                <!-- member -->
+
+                <!-- language -->
+                <div class="language dcenter cursor pRl">
+                    <i class="fa-solid fa-globe me-1"></i>
+                    <span class="dnm">VN</span>
+
+                    <div class="languagehover brg py-3 px-4 pAs bgw hiden w100px">
+                        <a href="" class="py-3">Việt Nam</a><br>
+                        <a href="" class="py-3">English</a><br>
+                        <a href="" class="py-3">日本</a>
+                    </div>
+                </div>
+                <!-- language -->
+
+                <!-- cart -->
+                <div class="cart p-2 brg dcenter cursor pRl">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="mx-lg-2">Giỏ hàng</span>
+                    <span class="bgb cwhite px-2">0</span>
+
+                    <div class="carthover brg py-3 px-4 pAs bgw hiden w200px dnm">
+                        <a href="">0 sản phẩm trong giỏ hàng</a>
+                    </div>
+                </div>
+                <!-- cart -->
+            </div>
+        </div>
+        <!-- header -->
+        <!-- home -->
+        <div class="home">
+            <!-- banner -->
+            <div class="banner row m0">
+                <div class="slider-progress">
+                    <div class="progress"></div>
+                </div>
+                <div class="owl-carousel banner__list owl-theme">
+                    <div class="item banner__item">
+                        <img src="./img/banner/bikelife_-1.png">
+                    </div>
+
+                    <div class="item banner__item">
+                        <img src="./img/banner/bikelife_-10.png">
+                    </div>
+
+                    <div class="item banner__item">
+                        <img src="./img/banner/bikelife_-6.jpg">
+                    </div>
+                    <div class="item banner__item">
+                        <img src="./img/banner/bikelife_-8.jpg">
+                    </div>
+
+                    <div class="item banner__item">
+                        <img src="./img/banner/bikelife_-9.png">
+                    </div>
+
+                    <div class="item banner__item">
+                        <img src="./img/banner/bikelife_bikelife_20212020_112143.jpg" style="width:100%;">
+                    </div>
+                </div>
+            </div>
+            <!-- banner -->
+
+            <!--trademark & sport  -->
+            <div class=" mainer row m0">
+                <div class="mycontainer">
+                    <div class="row w94">
+                        <div class="overlay-bg pAs"></div>
+                        <!-- nav-cate -->
+                        <div class="nav-cate py-3">
+                            <div class="ss-heading dbetween my-3">
+                                <h2 class="m0">DANH MỤC SẢN PHẨM</h2>
+                                <a role="button" class=" cprimary">Xem thêm<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                            <div class=" carouselcate owl-carousel owl-theme dcenter pRl my-3">
+                                <div class="item dcenter itemnate bd h40px px-2 py-2">
+                                    <div class="icon wh28 my-2">
+                                        <img class="wh28 me-3" src="./img/icon/16012020_1101257.png" alt="Dịch Vụ">
+                                    </div><span class="ms-2">Dịch Vụ</span>
+                                </div>
+                                <div class="item dcenter itemnate bd h40px px-2 py-2">
+                                    <div class="icon wh28 my-2">
+                                        <img class="wh28 me-3" src="./img/icon/16592020_1059181.png"
+                                            alt="Xe Đạp & Sườn Xe">
+                                    </div><span class="ms-2">Xe Đạp & Sườn Xe</span>
+                                </div>
+                                <div class="item dcenter itemnate bd h40px px-2 py-2">
+                                    <div class="icon wh28 my-2">
+                                        <img class="wh28 me-3" src="./img/icon/17352020_023515banh xe.png"
+                                            alt="Bánh xe">
+                                    </div><span class="ms-2">Bánh xe</span>
+                                </div>
+                                <div class="item dcenter itemnate bd h40px px-2 py-2">
+                                    <div class="icon wh28 my-2">
+                                        <img class="wh28 me-3" src="./img/icon/20352020_123548Groupset.jpg"
+                                            alt="Linh kiện">
+                                    </div><span class="ms-2">Linh kiện</span>
+                                </div>
+                                <div class="item dcenter itemnate bd h40px px-2 py-2">
+                                    <div class="icon wh28 my-2">
+                                        <img class="wh28 me-3" src="./img/icon/20432020_124359Phu kien.jpg"
+                                            alt="Phụ kiện">
+                                    </div><span class="ms-2">Phụ kiện</span>
+                                </div>
+                                <div class="item dcenter itemnate bd h40px px-2 py-2">
+                                    <div class="icon wh28 my-2">
+                                        <img class="wh28 me-3" src="./img/icon/20352020_123510Trang phuc va giay 1.png">
+                                    </div><span class="ms-2">Trang phục & Giày</span>
+                                </div>
+                                <div class="item dcenter itemnate bd h40px px-2 py-2">
+                                    <div class="icon wh28 my-2">
+                                        <img class="wh28 me-3" src="./img/icon/16002020_1100585.png" alt="Dầu nhớt">
+                                    </div><span class="ms-2">Dầu nhớt</span>
+                                </div>
+                                <div class="item dcenter itemnate bd h40px px-2 py-2">
+                                    <div class="icon wh28 my-2">
+                                        <img class="wh28 me-3" src="./img/icon/18192020_121934Gel.png"
+                                            alt="Thực phẩm chức năng">
+                                    </div><span class="ms-2">Thực phẩm chức năng</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- nav-cate -->
+
+                        <!-- trademark -->
+                        <div class="trademark">
+                            <div class="ss-heading dbetween my-3">
+                                <h2 class="m0">THƯƠNG HIỆU</h2>
+                                <a role="button" class=" cprimary">Xem thêm<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                            <div class="trademark__list row my-3">
+                                <div class="trademark__item my-lg-4 my-md-3 my-sm-2 text-center col-4 ">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/30022019_040224Logo 720.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="trademark__item my-lg-4 my-md-3 my-sm-2 text-center col-4 ">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/30012019_040130Logo FSA.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="trademark__item my-lg-4 my-md-3 my-sm-2 text-center col-4 ">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/31362019_033658Logo Vision.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="trademark__item my-lg-4 my-md-3 my-sm-2 text-center col-4 ">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/bikelife_-6.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="trademark__item my-lg-4 my-md-3 my-sm-2 text-center col-4 ">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/31242019_032435Logo Argon18.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="trademark__item my-lg-4 my-md-3 my-sm-2 text-center col-4 ">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/07092019_110906Logo FMA.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="trademark__item my-lg-4 my-md-3 my-sm-2 text-center col-4 ">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/bikelife_-6.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="trademark__item my-lg-4 my-md-3 my-sm-2 text-center col-4 ">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/31242019_032435Logo Argon18.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="trademark__item my-lg-4 my-md-3 my-sm-2 text-center col-4 ">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/07092019_110906Logo FMA.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="trademark__listcarousel my-3 owl-carousel owl-theme">
+                                <div class="item trademark__item">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/30022019_040224Logo 720.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="item trademark__item">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/30012019_040130Logo FSA.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="item trademark__item">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/31362019_033658Logo Vision.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="item trademark__item">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/bikelife_-6.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="item trademark__item">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/31242019_032435Logo Argon18.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="item trademark__item">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/07092019_110906Logo FMA.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="item trademark__item">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/bikelife_-6.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="item trademark__item">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/31242019_032435Logo Argon18.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                                <div class="item trademark__item">
+                                    <div class="trademark__info dend cursor my-2 "
+                                        style="background-image: url('./img/thuonghieu/07092019_110906Logo FMA.jpg');">
+                                        <div class="trademark__title">
+                                            <span class="">Xem sản phẩm BikeLife</span>
+                                        </div>
+                                    </div>
+                                    <a href="" class="cborder">Xem website Thương hiệu <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- trademark -->
+
+                        <!-- sport -->
+                        <div class="sport mb-3">
+                            <div class="ss-heading dbetween my-3">
+                                <h2 class="m0">DANH MỤC SẢN PHẨM</h2>
+                                <a role="button" class=" cprimary">Xem thêm<i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+
+                            <div class="owl-carousel owl-theme  sport__list cursor">
+                                <div class="item sport_item">
+                                    <img src="./img/sport/08172019_041755road.jpg" alt="" class="pRl">
+                                    <div class="sport__info pAs">
+                                        <span>Xe Đạp Đường Trường</span>
+                                    </div>
+                                </div>
+
+                                <div class="item sport_item">
+                                    <img src="./img/sport/08072019_040715Tri.jpg" alt="" class="pRl">
+                                    <div class="sport__info pAs">
+                                        <span>Ba Môn Phối Hợp</span>
+                                    </div>
+                                </div>
+
+                                <div class="item sport_item">
+                                    <img src="./img/sport/08122019_041208run.jpg" alt="" class="pRl">
+                                    <div class="sport__info pAs">
+                                        <span>Chạy Bộ</span>
+                                    </div>
+                                </div>
+
+                                <div class="item sport_item">
+                                    <img src="./img/sport/08092019_040914trail.jpg" alt="" class="pRl">
+                                    <div class="sport__info pAs">
+                                        <span>Chạy Trail</span>
+                                    </div>
+                                </div>
+
+                                <div class="item sport_item">
+                                    <img src="./img/sport/08042019_0404507.jpg" alt="" class="pRl">
+                                    <div class="sport__info pAs">
+                                        <span>Bơi Lội</span>
+                                    </div>
+                                </div>
+
+                                <div class="item sport_item">
+                                    <img src="./img/sport/08142019_041455city.jpg" alt="" class="pRl">
+                                    <div class="sport__info pAs">
+                                        <span>Xe Đạp Thành Phố</span>
+                                    </div>
+                                </div>
+
+                                <div class="item sport_item">
+                                    <img src="./img/sport/08212019_042109mtb.jpg" alt="" class="pRl">
+                                    <div class="sport__info pAs">
+                                        <span>Xe Đạp Leo Núi</span>
+                                    </div>
+                                </div>
+
+                                <div class="item sport_item">
+                                    <img src="./img/sport/08212019_042114kid.jpg" alt="" class="pRl">
+                                    <div class="sport__info pAs">
+                                        <span>Xe Đạp Trẻ Em</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sport -->
+                    </div>
+                </div>
+            </div>
+            <!--trademark & sport  -->
+
+            <!-- product -->
+            <div class="product py-5 row m0">
+                <div class="mycontainer">
+                    <div class="ss-heading d-flex my-3">
+                        <h2 class="m0 fw900">DANH MỤC SẢN PHẨM</h2>
+                        <h2 class="m0 mx-4 cborder fw900">DANH MỤC SẢN PHẨM</h2>
+                    </div>
+                    <div class="row dcenter2">
+
+                        <div class="col__6 col-sm-6 col-2__4 p0 bottomToTop fade-bottom">
+                            <!-- product item -->
+                            <div class="home-product-item">
+                                <div class="home-product-item__img">
+                                    <img src="./img/product/bikelife_-banh-xe-thang-dia-roval-clx32_thumb.jpg" alt="">
+                                </div>
+                                <span class="home-product-item__name">Bánh Xe Thắng Rim Roval CLX32</span>
+                                <span class="product__code">Mã Số: B13-51</span>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-current">30,000,000đ</span>
+                                    <span class="home-product-item__price-old">33,000,000đ</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">-9%</span>
+                                </div>
+                                <div class="home-product-item__lengh">
+                                    <span class="home-product-item__lhp">66MM</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col__6 col-sm-6 col-2__4 p0 bottomToTop fade-bottom">
+                            <!-- product item -->
+                            <div class="home-product-item">
+                                <div class="home-product-item__img">
+                                    <img src="./img/product/bikelife_-lip-xe-dap-token-11s_thumb.jpg" alt="">
+                                </div>
+                                <span class="home-product-item__name">Líp Xe Đạp Token 11S</span>
+                                <span class="product__code">Mã Số: B10-48</span>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-current">5,000,000đ</span>
+                                    <span class="home-product-item__price-old">6,000,000đ</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">-16%</span>
+                                </div>
+                                <div class="home-product-item__lengh">
+                                    <span class="home-product-item__lhp">CS-TK-11</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col__6 col-sm-6 col-2__4 p0 bottomToTop fade-bottom">
+                            <!-- product item -->
+                            <div class="home-product-item">
+                                <div class="home-product-item__img">
+                                    <img src="./img/product/bikelife_-sram-force-10s-bo-gio-dia-5339t-1725mm_thumb.jpg"
+                                        alt="">
+                                </div>
+                                <span class="home-product-item__name">Sram Force 10s bộ giò dĩa 53/39T 172.5mm</span>
+                                <span class="product__code">Mã Số: B09-84</span>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-current">4,500,000đ </span>
+                                    <span class="home-product-item__price-old">5,000,000đ</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">-10%</span>
+                                </div>
+                                <div class="home-product-item__lengh">
+                                    <span class="home-product-item__lhp">FORCE 105</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col__6 col-sm-6 col-2__4 p0 bottomToTop fade-bottom">
+                            <!-- product item -->
+                            <div class="home-product-item">
+                                <div class="home-product-item__img">
+                                    <img src="./img/product/bikelife_-osymetric-bcd130-5b-bo-2-dia-5244_thumb.jpg"
+                                        alt="">
+                                </div>
+                                <span class="home-product-item__name">Osymetric BCD130 5B bộ 2 dĩa 52/44T</span>
+                                <span class="product__code">Mã Số: B09-45</span>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-current">5,000,000đ</span>
+                                    <span class="home-product-item__price-old">6,000,000đ</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">-16%</span>
+                                </div>
+                                <div class="home-product-item__lengh">
+                                    <span class="home-product-item__lhp">5B 52/44</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col__6 col-sm-6 col-2__4 p0 bottomToTop fade-bottom">
+                            <!-- product item -->
+                            <div class="home-product-item">
+                                <div class="home-product-item__img">
+                                    <img src="./img/product/bikelife_ruot-xe-maxxis-700x2332-80mm_thumb_17522021_015249.jpg"
+                                        alt="">
+                                </div>
+                                <span class="home-product-item__name">Ruột Xe Maxxis 700x23/32 80mm</span>
+                                <span class="product__code">Mã Số: B20-57</span>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-current">140,000đ</span>
+                                    <span class="home-product-item__price-old">170,000đ</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">-17%</span>
+                                </div>
+                                <div class="home-product-item__lengh">
+                                    <span class="home-product-item__lhp">80MM</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col__6 col-sm-6 col-2__4 p0 bottomToTop fade-bottom">
+                            <!-- product item -->
+                            <div class="home-product-item">
+                                <div class="home-product-item__img">
+                                    <img src="./img/product/bikelife_ruot-xe-maxxis-700x2332-60mm_thumb_17492021_014959.jpg"
+                                        alt="">
+                                </div>
+                                <span class="home-product-item__name">Ruột Xe Maxxis 700x23/32 60mm</span>
+                                <span class="product__code">Mã Số: B20-56</span>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-current">120,000đ</span>
+                                    <span class="home-product-item__price-old">150,000đ</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">-20%</span>
+                                </div>
+                                <div class="home-product-item__lengh">
+                                    <span class="home-product-item__lhp">60MM</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col__6 col-sm-6 col-2__4 p0 bottomToTop fade-bottom">
+                            <!-- product item -->
+                            <div class="home-product-item">
+                                <div class="home-product-item__img">
+                                    <img src="./img/product/bikelife_ruot-xe-maxxis-700x2332-48mm_thumb_17432021_014355.jpg"
+                                        alt="">
+                                </div>
+                                <span class="home-product-item__name">Ruột xe Maxxis 700x23/32 48mm</span>
+                                <span class="product__code">Mã Số: B20-55</span>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-current">120,000đ</span>
+                                    <span class="home-product-item__price-old">150,000đ</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">-20%</span>
+                                </div>
+                                <div class="home-product-item__lengh">
+                                    <span class="home-product-item__lhp">48MM</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col__6 col-sm-6 col-2__4 p0 bottomToTop fade-bottom">
+                            <!-- product item -->
+                            <div class="home-product-item">
+                                <div class="home-product-item__img">
+                                    <img src="./img/product/bikelife_3t-revo-team-stealth-aerobars-carbon_thumb_15322021_103238.jpg"
+                                        alt="">
+                                </div>
+                                <span class="home-product-item__name">3T REVO TEAM STEALTH AEROBARS CARBON</span>
+                                <span class="product__code">Mã Số: B15-63</span>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-current">12,500,000đ</span>
+                                    <span class="home-product-item__price-old">14,000,000đ</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">-10%</span>
+                                </div>
+                                <div class="home-product-item__lengh">
+                                    <span class="home-product-item__lhp">-</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col__6 col-sm-6 col-2__4 p0 bottomToTop fade-bottom">
+                            <!-- product item -->
+                            <div class="home-product-item">
+                                <div class="home-product-item__img">
+                                    <img src="./img/product/bikelife_bo-dem-lot-tahy-the-cho-mu-bao-hiem-kask-protone_thumb_27252021_032514.jpg"
+                                        alt="">
+                                </div>
+                                <span class="home-product-item__name">Bộ Đệm Lót Thay Thế Cho Mũ Bảo Hiểm Kask
+                                    Protone</span>
+                                <span class="product__code">Mã Số: D05-1</span>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-current">400,000đ</span>
+                                    <span class="home-product-item__price-old">550,000đ</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">-27%</span>
+                                </div>
+                                <div class="home-product-item__lengh">
+                                    <span class="home-product-item__lhp">KASK</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col__6 col-sm-6 col-2__4 p0 bottomToTop fade-bottom">
+                            <!-- product item -->
+                            <div class="home-product-item">
+                                <div class="home-product-item__img pRl">
+                                    <img src="./img/product/bikelife_quan-tri-nam-zoot-tri-short-man-core-9_thumb_21072021_020746.jpg"
+                                        alt="">
+                                </div>
+                                <span class="home-product-item__name">Quần TRI Nam Zoot Tri Short Man Core 9</span>
+                                <span class="product__code">Mã Số: D02-79</span>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-current">1,200,000đ</span>
+                                    <span class="home-product-item__price-old">2,140,000đ</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">-43%</span>
+                                </div>
+                                <div class="home-product-item__lengh">
+                                    <span class="home-product-item__lhp bgshadow1">SOLD OUT</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="dcenter my-5 cwhite">
+                        <button class="bn px-3 py-2 bgbtn">Xem thêm<i class=" ms-1 fa-solid fa-arrow-down"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- product -->
+
+
+        </div>
+        <!-- home -->
+
+        <!-- footer -->
+        <div class="footer row py-5 m0">
+            <div class="mycontainer dfwrap">
+                <div class="col-12 col-sm-5 footer__left px-sm-3 px-lg-4 ">
+                    <div class="footer__title cprimary">
+                        GIỚI THIỆU
+                    </div>
+                    <span class="line bgg d-flex mt-3  " style="height: 3px ;width: 30px;"></span>
+                    <p class="left__desc text-white mt-3 lh-base text-about-ellips">
+                        Bikelife được thành lập vào năm 2012 như là một cửa hàng xe đạp và phòng trưng bày cũng như là
+                        nhà
+                        phân phối các nhãn hiệu xe đạp và đa thương hiệu. Mục tiêu của chúng tôi là làm cho Việt Nam vận
+                        động và yêu mến thể thao bền bỉ như chúng ta, cho dù đó là thông qua việc bán các sản phẩm không
+                        thể
+                        thiếu cho khách hàng trực tiếp
+                    </p>
+
+                    <a role="button" class=" cprimary mt-3">Xem thêm<i class="fa-solid fa-chevron-right"></i></a>
+
+                    <div class="left__social mt-4 dcenter1">
+                        <span class="ms-3" style="height: 44px;width: 44px;">
+                            <img class="object-fit-cover w-100 h-100" src="./img/footer/social-3.png" alt="">
+                        </span>
+
+                        <span class="ms-3" style="height: 44px;width: 44px;">
+                            <img class="object-fit-cover w-100 h-100" src="./img/footer/social-4.png" alt="">
+                        </span>
+                        <span class="ms-3" style="height: 44px;width: 44px;">
+                            <img class="object-fit-cover w-100 h-100" src="./img/footer/social-5.png" alt="">
+                        </span>
+                        <span class="ms-3" style="height: 44px;width: 44px;">
+                            <img class="object-fit-cover w-100 h-100" src="./img/footer/social-6-1.png" alt="">
+                        </span>
+                        <span class="ms-3" style="height: 44px;width: 44px;">
+                            <img class="object-fit-cover w-100 h-100" src="./img/footer/social-7.png" alt="">
+                        </span>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-3 footer__center mt-4 mt-sm-0 px-sm-3  px-lg-4 ">
+                    <div class="footer__title fw900 cprimary">
+                        QUY ĐỊNH BÁN HÀNG
+                    </div>
+                    <span class="line bgg d-inline-block mt-3  " style="height: 3px ;width: 30px;"></span>
+                    <ul style="color: rgba(255,255,255,0.9);">
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <span class="cwhite">Chính Sách Bảo Hành</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <span>Chính Sách Bảo Mật Thông Tin</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <span>Chính Sách Xử Lý Khiếu Nại</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <span>Ưu Đãi Mua Hàng Trả Góp 0%</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <span>Chương Trình Thành Viên VIP</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <span>Hướng Dẫn Mua Hàng</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <span>Hướng Dẫn Thanh Toán</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <span>Quy Định Vận Chuyển</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-chevron-right"></i>
+                            <span>Quy Định Đổi / Trả và Hủy Đơn Hàng</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 footer__right px-sm-3 px-lg-4 mt-4 mt-sm-0 "
+                    style="color: var(--color-white);">
+                    <P>Đăng ký email để nhận những thông tin mới nhất về các khuyến mãi, tin tức, sự kiện của
+                        BikeLife
+                    </P>
+                    <div class="input__email input-group">
+                        <form id="frmemail" class="d-flex my-3" novalidate>
+                            <input class="bgshadow1 bdblue2" type="email" placeholder="Nhập Email của bạn" for="">
+                            <input class="bgb dcenter cwhite" type="submit" value="Đăng ký"></input>
+                        </form>
+                    </div>
+                    <div class="contact my-4">
+                        <img src="./img/footer/social-1.png" alt="" style="height: 35px;">
+                        <img src="./img/footer/social-2.png" alt="" style="height: 35px;">
+                    </div>
+                    <div class="statistic my-2">
+                        <a href=""><img class="h50px" src="img/bct.png" alt=""></a>
+                    </div>
+                    <div>
+                        <span>ONLINE:<span class="cprimary"> 38</span></span>
+                        -
+                        <span>VISITORS:<span class="cprimary"> 21,817,717</span></span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 my-5 ">
+                    <div class="w-100 " style="height: 1px ; background-color: rgba(255,255,255,0.2);">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 ">
+                    <div class="footer__end d-flex justify-content-between flex-wrap">
+                        <div class="col-12 col-sm-5 px-sm-2 px-lg-4">
+                            <div class="footer__end--left text-white-50 fw-6 lh-base">
+                                <p class="fw-semibold">CÔNG TY TNHH MTV XNK BIKE LIFE</p>
+                                <p class="mt-2">GPKD số 0311530641 do Sở KH và ĐT TP Hồ Chí Minh cấp ngày 10/02/2012</p>
+
+                                <p class="mt-2"> - GĐ/Sở hữu website Nguyễn Tài</p>
+
+                                <p class="mt-2"> Địa chỉ: 83 Phạm Thái Bường, P.Tân Phong, Q.7, Tp.HCM</p>
+
+
+
+
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-7 px-sm-2 px-lg-4 d-flex flex-column mt-4 mt-sm-0">
+                            <div class="footer__end--right d-flex justify-content-between text-white-50 text-uppercase lh-lg "
+                                style="font-size: 15px;">
+                                <ul class="   ">
+                                    <li>Trang chủ</li>
+                                    <li>Thương hiệu</li>
+                                    <li>Sản phẩm</li>
+                                </ul>
+
+                                <ul>
+                                    <li>Môn thể thao</li>
+                                    <li>Khuyến mãi</li>
+                                    <li>Sản phẩm cũ</li>
+                                </ul>
+
+                                <ul>
+                                    <li>Tài trợ</li>
+                                    <li>Thư viện</li>
+                                    <li>Câu hỏi thường gặp</li>
+                                </ul>
+                                <p></p>
+                            </div>
+
+                            <div class="footer__end__line w-100 mt-3"
+                                style="height: 1px ; background-color: rgba(255,255,255,0.2);">
+                            </div>
+                            <p class="mt-3 mt-sm-auto text-white-50 ">© 2020 BIKE LIFE. Powered by BizMaC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="icon__fixed row bsgutterx0 dinline">
+            <img src="./img/socical/phone.jpg" alt="">
+            <img src="./img/socical/zl.png" alt="">
+            <img src="./img/socical/fb.png" alt="">
+            <img src="./img/socical/messenger.jpg" alt="">
+            <button onclick="topFunction()" class="bgw" id="btntop" title="Go to top"><i
+                    class="fa-solid fa-chevron-up"></i></button>
+        </div>
+
+    </div>
+    <script src="./public/js/script.js"></script>
+
+</body>
+
+</html>
